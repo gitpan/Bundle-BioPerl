@@ -1,0 +1,30 @@
+Bundle::BioPerl - A bundle to install basic BioPerl modules and prerequisites
+
+Version 1.00 - 2000-12-14
+Bundled by: Chris Dagdigian <dag@sonsorol.org>
+
+To install this Bundle file locally:
+
+perl Makefile.PL
+make install
+
+Then, for a full list of the modules which this bundle
+installs, use:
+
+perldoc Bundle::BioPerl
+
+Finally, to install the modules which the bundle lists:
+
+perl -MCPAN -e 'install Bundle::BioPerl'
+
+This bundle gathers together all of the CPAN hosted external
+modules for BioPerl.
+
+Comments/Suggestions: 
+Chris Dagdigian, <dag@sonsorol.org>
+
+
+
+
+
+
