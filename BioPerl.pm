@@ -1,6 +1,6 @@
 package Bundle::BioPerl;
 
-$VERSION = '2.02';
+$VERSION = '2.03';
 
 1;
 
@@ -63,8 +63,6 @@ SOAP::Lite		- Used for bibliographic queries & XEMBLService modules
 GD		- Used only for drawing things within the Bio::Graphics modules
 
 Storable		- recommended for all bioperl releases after 0.7.2. Used for persistant storage of objects and local file caching
-
-Parse::RecDescent		- Used for parsing Unigene files
 
 Text::Shellwords		- Text parser used by Bio::Graphics::FeatureFile.pm
 
