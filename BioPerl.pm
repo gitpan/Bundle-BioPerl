@@ -1,6 +1,6 @@
 package Bundle::BioPerl;
 
-$VERSION = '2.01';
+$VERSION = '2.02';
 
 1;
 
@@ -64,6 +64,9 @@ GD		- Used only for drawing things within the Bio::Graphics modules
 
 Storable		- recommended for all bioperl releases after 0.7.2. Used for persistant storage of objects and local file caching
 
+Parse::RecDescent		- Used for parsing Unigene files
+
+Text::Shellwords		- Text parser used by Bio::Graphics::FeatureFile.pm
 
 =head1 DESCRIPTION
 
@@ -74,9 +77,9 @@ contained within the standard Perl distribution. These external
 modules can be obtained from the Comprehensive Perl Archive 
 Network (CPAN) located at http://www.cpan.org. 
 
-MARCH 2002 NOTE: The latest release of this bundle includes all of the
+July 2002 NOTE: The latest release of this bundle includes all of the
 external CPAN modules that are listed as dependencies of the
-official BioPerl 1.0 codebase release. The only exceptions are the DBD::
+official BioPerl 1.0.2 codebase release. The only exceptions are the DBD::
 DBI:: modules which are really best off installed on their own if you
 have a need to load and query relational databases.
 
