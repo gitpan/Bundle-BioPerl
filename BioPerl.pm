@@ -1,6 +1,6 @@
 package Bundle::BioPerl;
 
-$VERSION = '2.03';
+$VERSION = '2.04';
 
 1;
 
@@ -58,6 +58,8 @@ XML::Node		- recommended for all bioperl releases after 0.6.2
 
 XML::Twig		- recommended for all bioperl releases after 0.6.2
 
+XML::DOM		- used only by SeqIO::bsml
+
 SOAP::Lite		- Used for bibliographic queries & XEMBLService modules
 
 GD		- Used only for drawing things within the Bio::Graphics modules
@@ -75,9 +77,9 @@ contained within the standard Perl distribution. These external
 modules can be obtained from the Comprehensive Perl Archive 
 Network (CPAN) located at http://www.cpan.org. 
 
-July 2002 NOTE: The latest release of this bundle includes all of the
+December 2002 NOTE: The latest release of this bundle includes all of the
 external CPAN modules that are listed as dependencies of the
-official BioPerl 1.0.2 codebase release. The only exceptions are the DBD::
+official BioPerl 1.2 codebase release. The only exceptions are the DBD::
 DBI:: modules which are really best off installed on their own if you
 have a need to load and query relational databases.
 
