@@ -1,6 +1,6 @@
 package Bundle::BioPerl;
 
-$VERSION = '2.00';
+$VERSION = '2.01';
 
 1;
 
@@ -61,6 +61,8 @@ XML::Twig		- recommended for all bioperl releases after 0.6.2
 SOAP::Lite		- Used for bibliographic queries & XEMBLService modules
 
 GD		- Used only for drawing things within the Bio::Graphics modules
+
+Storable		- recommended for all bioperl releases after 0.7.2. Used for persistant storage of objects and local file caching
 
 
 =head1 DESCRIPTION
