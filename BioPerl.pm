@@ -1,6 +1,6 @@
 package Bundle::BioPerl;
 
-$VERSION = '1.00';
+$VERSION = '2.00';
 
 1;
 
@@ -32,7 +32,9 @@ is allowed within the intstallation directory.
 
 Bundle::LWP		- recommended, used for network access
 
-File::Temp		- generally required after bioperl release 0.6.2 
+File::Temp		- Already present in modern versions of perl
+
+File::Spec		- Already present in modern versions of perl
 
 IO::Scalar		- optional, used only in Bio::Tools::Blast::Run::WebBlast.pm
 
@@ -46,23 +48,43 @@ LWP::UserAgent          - recommended, used for web access
 
 URI::Escape             - recommended, used for web access
 
-XML::Parser		- recommended for bioperl releases after 0.6.2
+XML::Parser		- recommended for all bioperl releases after 0.6.2
 
-XML::Parser::PerlSAX	- recommended for bioperl releases after 0.6.2
+XML::Parser::PerlSAX	- recommended for all bioperl releases after 0.6.2
 
-XML::Writer		- recommended for bioperl releases after 0.6.2
+XML::Writer		- recommended for all bioperl releases after 0.6.2
 
-XML::Node		- recommended for bioperl releases after 0.6.2
+XML::Node		- recommended for all bioperl releases after 0.6.2
+
+XML::Twig		- recommended for all bioperl releases after 0.6.2
+
+SOAP::Lite		- Used for bibliographic queries & XEMBLService modules
+
+GD		- Used only for drawing things within the Bio::Graphics modules
+
 
 =head1 DESCRIPTION
 
 The BioPerl distribution from http://bioperl.org contains code and
 modules that may use or require additional 'external' perl modules 
 for advanced functionality. Many of the external modules are not
-contained within the standard Perl distribution.
+contained within the standard Perl distribution. These external 
+modules can be obtained from the Comprehensive Perl Archive 
+Network (CPAN) located at http://www.cpan.org. 
 
-These external modules can be obtained from the Comprehensive
-Perl Archive Network (CPAN) located at http://www.cpan.org.
+MARCH 2002 NOTE: The latest release of this bundle includes all of the
+external CPAN modules that are listed as dependencies of the
+official BioPerl 1.0 codebase release. The only exceptions are the DBD::
+DBI:: modules which are really best off installed on their own if you
+have a need to load and query relational databases.
+
+A webpage listing all known dependencies is maintained at
+http://bioperl.org/Core/external.shtml
+
+These modules are not required - they simply extend the functionality
+of bioperl in various ways. To get the best use of bioperl, particularly
+after the release of BioPerl 1.0 we recommend at least having the
+LWP:: network access and the XML:: related modules installed. 
 
 This perl module (Bundle::BioPerl) contains NO functionality
 or real code at all. It is essentially a special perl module
@@ -83,7 +105,9 @@ outside of CPAN at http://sourceforge.net/projects/expat/.
 
 The C<install Bundle::BioPerl> process may need to be repeated
 several times to complete the full installation of all listed
-modules.
+modules. Some external modules are complicated or may themselves
+have dependencies. Wherever possible we attempt to track this
+online at http://bioperl.org/Core/external.shtml
 
 NOTE: This Bundle does not install BioPerl :) Just the additional
 modules that BioPerl code ocasionally makes use of. You will still
