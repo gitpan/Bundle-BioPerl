@@ -1,6 +1,7 @@
+
 package Bundle::BioPerl;
 
-$VERSION = '2.1.0';
+$VERSION = '2.1.5';
 
 1;
 
@@ -75,6 +76,9 @@ GD		- Used only for drawing things within the Bio::Graphics modules
 GD::SVG		- Optional, used to generate SVG output in Bio::Graphics
 
 SVG		- Optional, used to generate SVG output in Bio::Graphics
+
+SVG::Graph	- Optional, used to generate SVG output in Bio::Graphics
+
 
 Storable		- recommended for all bioperl releases after 0.7.2. Used for persistant storage of objects and local file caching
 

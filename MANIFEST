@@ -3,3 +3,4 @@ Makefile.PL
 README
 Changes
 BioPerl.pm
+META.yml                                Module meta-data (added by MakeMaker)
