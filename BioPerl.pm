@@ -1,6 +1,6 @@
 package Bundle::BioPerl;
 
-$VERSION = '2.05';
+$VERSION = '2.1.0';
 
 1;
 
@@ -40,6 +40,10 @@ IO::Scalar		- optional, used only in Bio::Tools::Blast::Run::WebBlast.pm
 
 IO::String		- recommended, used by Bio::DB:WebDBSeqI
 
+HTML::Entities          - recommended, used for web RemoteBlast access
+
+HTML::Parser            - recommended, used to parse GDP page in Bio::DB::GDP
+
 HTTP::Request::Common   - recommended, used for web access
 
 HTTP::Status            - recommended, used for web access
@@ -57,7 +61,7 @@ XML::Writer		- recommended for all bioperl releases after 0.6.2
 XML::Node		- recommended for all bioperl releases after 0.6.2
 
 XML::Twig		- recommended for all bioperl releases after 0.6.2
-
+    
 Text::Iconv		- dependency for XML::Twig
 
 Scalar::Util		- dependency for XML::Twig
@@ -68,15 +72,18 @@ SOAP::Lite		- Used for bibliographic queries & XEMBLService modules
 
 GD		- Used only for drawing things within the Bio::Graphics modules
 
+GD::SVG		- Optional, used to generate SVG output in Bio::Graphics
+
+SVG		- Optional, used to generate SVG output in Bio::Graphics
+
 Storable		- recommended for all bioperl releases after 0.7.2. Used for persistant storage of objects and local file caching
 
-Text::Shellwords		- Text parser used by Bio::Graphics::FeatureFile.pm
+Text::Shellwords		- Recommended, used in Bio::Graphics
 
 Data::Stag		- This module is used by our SeqIO/chado* modules.  
 
 Graph::Directed		- This module is used for Ontology Engine implementation for the GO parser
   
-
 
 =head1 DESCRIPTION
 
@@ -89,14 +96,13 @@ Network (CPAN) located at http://www.cpan.org.
 
 NOTE: The latest release of this bundle includes all of the
 external CPAN modules that are listed as dependencies of the
-official BioPerl 1.2.1 codebase release. The only exceptions are the DBD::
-DBI:: modules which are really best off installed on their own if you
-have a need to load and query relational databases.
+official BioPerl 1.4 codebase release. 
 
-A webpage listing all known dependencies is maintained at
-http://bioperl.org/Core/external.shtml
+The only exceptions are the DBD:: and DBI:: modules which are really 
+best off installed on their own if you have a need to load and 
+query relational databases.
 
-These modules are not required - they simply extend the functionality
+These modules are not required - they greatly extend the functionality
 of bioperl in various ways. To get the best use of bioperl, particularly
 after the release of BioPerl 1.0 we recommend at least having the
 LWP:: network access and the XML:: related modules installed. 
@@ -121,8 +127,7 @@ outside of CPAN at http://sourceforge.net/projects/expat/.
 The C<install Bundle::BioPerl> process may need to be repeated
 several times to complete the full installation of all listed
 modules. Some external modules are complicated or may themselves
-have dependencies. Wherever possible we attempt to track this
-online at http://bioperl.org/Core/external.shtml
+have dependencies. 
 
 NOTE: This Bundle does not install BioPerl :) Just the additional
 modules that BioPerl code ocasionally makes use of. You will still
