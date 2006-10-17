@@ -1,7 +1,6 @@
-
 package Bundle::BioPerl;
 
-$VERSION = '2.1.5';
+$VERSION = '2.1.6';
 
 1;
 
@@ -9,11 +8,11 @@ __END__
 
 =head1 NAME
 
-Bundle::BioPerl - A bundle to install external CPAN modules used by BioPerl
+Bundle::BioPerl - A bundle to install external CPAN modules used by BioPerl 1.5.2
 
 =head1 SYNOPSIS
 
-  
+
 Perl one liner using CPAN.pm:
 
   perl -MCPAN -e 'install Bundle::BioPerl'
@@ -31,63 +30,61 @@ is allowed within the intstallation directory.
 
 =head1 CONTENTS
 
-Bundle::LWP		- recommended, used for network access
+    Ace
 
-File::Temp		- Already present in modern versions of perl
+    Bio::ASN1::EntrezGene
 
-File::Spec		- Already present in modern versions of perl
+    Class::AutoClass 1.01
 
-IO::Scalar		- optional, used only in Bio::Tools::Blast::Run::WebBlast.pm
+    Clone
 
-IO::String		- recommended, used by Bio::DB:WebDBSeqI
+    Convert::Binary::C
 
-HTML::Entities          - recommended, used for web RemoteBlast access
+    Data::Stag::writer
 
-HTML::Parser            - recommended, used to parse GDP page in Bio::DB::GDP
+    DBD::mysql
 
-HTTP::Request::Common   - recommended, used for web access
+    GD::SVG	- Optional, used to generate SVG output in Bio::Graphics
 
-HTTP::Status            - recommended, used for web access
+    GD 1.3	- Used only for drawing things within the Bio::Graphics modules
 
-LWP::UserAgent          - recommended, used for web access
+    Graph::Directed	- This module is used for Ontology Engine implementation for the GO parser
 
-URI::Escape             - recommended, used for web access
+    HTML::Parser 3.0	- recommended, used to parse GDP page in Bio::DB::GDP
 
-XML::Parser		- recommended for all bioperl releases after 0.6.2
+    HTTP::Request::Common- recommended, used for web access
 
-XML::Parser::PerlSAX	- recommended for all bioperl releases after 0.6.2
+    LWP::UserAgent	- recommended, used for web access
 
-XML::Writer		- recommended for all bioperl releases after 0.6.2
+    Set::Scalar
 
-XML::Node		- recommended for all bioperl releases after 0.6.2
+    SOAP::Lite	- Used for bibliographic queries & XEMBLService modules
 
-XML::Twig		- recommended for all bioperl releases after 0.6.2
-    
-Text::Iconv		- dependency for XML::Twig
+    Spreadhseet::ParseExcel
 
-Scalar::Util		- dependency for XML::Twig
+    Storable	- recommended for all bioperl releases after 0.7.2. Used for persistant storage of objects and local file caching
 
-XML::DOM		- used only by SeqIO::bsml
+    SVG 2.26	- Optional, used to generate SVG output in Bio::Graphics
 
-SOAP::Lite		- Used for bibliographic queries & XEMBLService modules
+    SVG::Graph 0.01	- Optional, used to generate SVG output in Bio::Graphics
 
-GD		- Used only for drawing things within the Bio::Graphics modules
+    Text::Shellwords	- Recommended, used in Bio::Graphics
 
-GD::SVG		- Optional, used to generate SVG output in Bio::Graphics
+    XML::DOM::XPath
 
-SVG		- Optional, used to generate SVG output in Bio::Graphics
+    XML::Parser::PerlSAX	- recommended for all bioperl releases after 0.6.2
 
-SVG::Graph	- Optional, used to generate SVG output in Bio::Graphics
+    XML::SAX
 
+    XML::SAX::Base
 
-Storable		- recommended for all bioperl releases after 0.7.2. Used for persistant storage of objects and local file caching
+    XML::SAX::Writer
 
-Text::Shellwords		- Recommended, used in Bio::Graphics
+    XML::Simple
 
-Data::Stag		- This module is used by our SeqIO/chado* modules.  
+    XML::Twig	- recommended for all bioperl releases after 0.6.2
 
-Graph::Directed		- This module is used for Ontology Engine implementation for the GO parser
-  
+    XML::Writer	- recommended for all bioperl releases after 0.6.2
 
 =head1 DESCRIPTION
 
@@ -100,11 +97,11 @@ Network (CPAN) located at http://www.cpan.org.
 
 NOTE: The latest release of this bundle includes all of the
 external CPAN modules that are listed as dependencies of the
-official BioPerl 1.4 codebase release. 
+official BioPerl 1.5.2 codebase release. 
 
 The only exceptions are the DBD:: and DBI:: modules which are really 
 best off installed on their own if you have a need to load and 
-query relational databases.
+query relational. databases.
 
 These modules are not required - they greatly extend the functionality
 of bioperl in various ways. To get the best use of bioperl, particularly
@@ -154,7 +151,3 @@ Chris Dagdigian E<lt>F<dag@sonsorol.org>E<gt>
 (Author only of this bundle, not any the modules it lists)
 
 =cut
-
-
-
-
