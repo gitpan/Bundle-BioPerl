@@ -1,6 +1,6 @@
 package Bundle::BioPerl;
 
-$VERSION = '2.1.6';
+$VERSION = '2.1.7';
 
 1;
 
@@ -40,7 +40,7 @@ is allowed within the intstallation directory.
 
     Convert::Binary::C
 
-    Data::Stag::writer
+    Data::Stag::Writer
 
     DBD::mysql
 
@@ -60,7 +60,7 @@ is allowed within the intstallation directory.
 
     SOAP::Lite	- Used for bibliographic queries & XEMBLService modules
 
-    Spreadhseet::ParseExcel
+    Spreadsheet::ParseExcel
 
     Storable	- recommended for all bioperl releases after 0.7.2. Used for persistant storage of objects and local file caching
 
