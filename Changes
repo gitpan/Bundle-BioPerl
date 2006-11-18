@@ -17,6 +17,13 @@ v2.1.5 12 April 2004 -- Added SVG::Graph to the bundle
 
 v2.1.6 17 October 2006 -- Updated for new BioPerl release by Nathan Haigh
 
+v2.1.7 17 November 2006 --  Bugfix, spelling errors & typos
+
+v2.1.8 18 November 2006 --  Potential typo, added space after HTTP::Request::Common 
+
+
+
+
 
 
 

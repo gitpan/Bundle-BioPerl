@@ -9,6 +9,7 @@ Version 2.1.4 - 2003-12-20
 Version 2.1.5 - 2004-04-20
 Version 2.1.6 - 2006-10-17
 Version 2.1.7 - 2006-11-17 (Thanks to: victor.de.jager@nbic.nl for finding typos in 2.1.6))
+Version 2.1.8 - 2006-11-18 Just to be safe, added extra space char after HTTP::Request::Common 
 
 
 Bundled by: Chris Dagdigian <dag@sonsorol.org>

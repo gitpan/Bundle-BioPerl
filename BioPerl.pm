@@ -1,6 +1,6 @@
 package Bundle::BioPerl;
 
-$VERSION = '2.1.7';
+$VERSION = '2.1.8';
 
 1;
 
@@ -52,7 +52,7 @@ is allowed within the intstallation directory.
 
     HTML::Parser 3.0	- recommended, used to parse GDP page in Bio::DB::GDP
 
-    HTTP::Request::Common- recommended, used for web access
+    HTTP::Request::Common - recommended, used for web access (part of libwww-perl)
 
     LWP::UserAgent	- recommended, used for web access
 
